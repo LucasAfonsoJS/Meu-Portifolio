@@ -1,0 +1,114 @@
+$preto: #232429;
+$alturaMinima: 100vh;
+$corTexto: #fff;
+
+.sobre {
+  background-color: $preto;
+  min-height: $alturaMinima;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  h2 {
+    display: flex;
+    color: $corTexto;
+    justify-content: center;
+    font-size: 2.2rem;
+    padding: 20px 0;
+  }
+  .sobre_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    
+
+    .sobre_mim {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      background-color: red;
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+      h3 {
+        color: $corTexto;
+        font-size: 2rem;
+        justify-content: center;
+      }
+      p {
+        color: $corTexto;
+        font-size: 1.5rem;
+        padding: 20px 0;
+        justify-content: center;
+      }
+    }
+    .sobre_imgs {
+      display: flex;
+      width: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      align-items:center;
+      justify-content: center;
+
+      img {
+        height: 550px;
+        max-width: 550px;
+        width: 100%;
+        display: flex;
+        background-color: rebeccapurple;
+        align-items: center;
+        
+      }
+
+      //LIMPAR ->.tyescript,
+      // .javascript,
+      // .styled-components,
+      // .css,
+      // .html
+      // .javascript {
+      //   color: #ffff00ec;
+      // }
+      // .tyescript {
+      //   color: #0000ff;
+      // }
+      // .styled-components {
+      //   color: rgb(177, 25, 182);
+      // }
+      // .css {
+      //   color: #0000ff;
+      // }
+      // .html {
+      //   color: #ffa500;
+      // }
+      // .tyescript,
+      // .javascript,
+      // .styled-components,
+      // .css,
+      // .html {
+      //   display: flex;
+      //   align-items: center;
+      //   font-size: 4rem;
+      //   border-radius: 5px;
+      //   margin: 0 10px;
+      //   width: 100%;
+      // }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sobre .sobre_container .sobre_mim {
+    width: 100%;
+  }
+  .sobre {
+    .sobre_container {
+      .sobre_imgs {
+        width: 100%;
+      }
+    }
+  }
+}

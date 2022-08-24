@@ -1,0 +1,47 @@
+.fundo-projetos {
+  background-color: #232429;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.fundo-projetos .fundo_container {
+  display: flex;
+  justify-content: center;
+}
+.fundo-projetos .fundo_container .box-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fundo-projetos .fundo_container .box-wraper .box-single {
+  border-radius: 40px;
+  background: linear-gradient(145deg, #252525, #2c2c2c);
+  box-shadow: 8px 8px 17px #171717, -8px -8px 17px #3b3b3b;
+  width: 300px;
+  padding: 0 2%;
+  margin: 30px;
+  transition: 1s;
+}
+.fundo-projetos .fundo_container .box-wraper .box-single:hover {
+  transition: 1s;
+  box-shadow: 8px 8px 17px #202020, -8px -8px 17px #dadada;
+}
+.fundo-projetos .fundo_container .box-wraper .box-single h2,
+.fundo-projetos .fundo_container .box-wraper .box-single p {
+  padding: 10px 2%;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+}
+.fundo-projetos .fundo_container .box-wraper .box-single h2 {
+  font-size: 1.5rem;
+}
+.fundo-projetos .fundo_container .box-wraper .box-single p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .fundo-projetos .fundo_container .box-wraper .box-single {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Projetos.css.map */

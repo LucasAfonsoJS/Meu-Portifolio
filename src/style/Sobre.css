@@ -1,0 +1,69 @@
+.sobre {
+  background-color: #232429;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+.sobre h2 {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  font-size: 2.2rem;
+  padding: 20px 0;
+}
+.sobre .sobre_container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.sobre .sobre_container .sobre_mim {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: red;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.sobre .sobre_container .sobre_mim h3 {
+  color: #fff;
+  font-size: 2rem;
+  justify-content: center;
+}
+.sobre .sobre_container .sobre_mim p {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 20px 0;
+  justify-content: center;
+}
+.sobre .sobre_container .sobre_imgs {
+  display: flex;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+.sobre .sobre_container .sobre_imgs img {
+  height: 550px;
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  background-color: rebeccapurple;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .sobre .sobre_container .sobre_mim {
+    width: 100%;
+  }
+  .sobre .sobre_container .sobre_imgs {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Sobre.css.map */

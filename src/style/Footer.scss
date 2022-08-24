@@ -1,0 +1,31 @@
+$corFooter: #2b2c30;
+
+
+footer {
+    background-color: $corFooter; 
+    padding: 3rem;
+    display: flex;
+    width: 100%;
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+
+       li {
+        display: flex;
+        
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                padding-top: 0.9rem;
+
+                .tamanho-dos-icones {
+                    font-size: 1.2rem;
+                    margin-bottom: -3px;
+                }
+            }
+       }
+    }
+}

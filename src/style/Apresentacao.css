@@ -1,0 +1,60 @@
+.fundo {
+  background-color: #232429;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.fundo .container {
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 3rem;
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.fundo .container .icones {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  background-color: red;
+}
+.fundo .container .icones a {
+  margin-top: 10vh;
+  display: flex;
+  color: white;
+  padding: 0 1rem;
+}
+.fundo .container .icones_foto-minha {
+  display: flex;
+  width: 50%;
+  background-color: #7b29e6;
+  height: 80vh;
+}
+
+.tamanho-dos-icones {
+  font-size: 2rem;
+}
+
+@-webkit-keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-35px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-35px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=Apresentacao.css.map */
