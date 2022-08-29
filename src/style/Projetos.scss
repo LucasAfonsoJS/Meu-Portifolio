@@ -1,7 +1,26 @@
 $preto: #232429;
 $alturaMinima: 100vh;
 $corTexto: #fff;
-
+.verMais {
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 30px;
+  padding: 10px;
+  width: 200px;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 8px 8px 17px #171717, -2px -2px 17px #3b3b3b;
+  transition: 1s;
+  border: 0;
+  &:hover{
+    transition: 1s;
+    box-shadow: 4px 4px 17px #202020, -2px -2px 17px #dadada;
+  }
+}
+#fechar {
+  display: none !important;
+  transition: 1s;
+}
 .fundo-projetos {
   background-color: $preto;
   min-height: $alturaMinima;
@@ -11,23 +30,37 @@ $corTexto: #fff;
   .fundo_container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      color: $corTexto;
+      margin: 50px 0;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
 
     .box-wraper {
       // background-color: yellowgreen;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      // display: none;
 
       .box-single {
         border-radius: 40px;
         background: linear-gradient(145deg, #252525, #2c2c2c);
         box-shadow: 8px 8px 17px #171717, -8px -8px 17px #3b3b3b;
         width: 300px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
         padding: 0 2%;
         margin: 30px;
         transition: 1s;
-        //border-radius: 10px;
-        //background-color: rebeccapurple;
+
         &:hover {
           transition: 1s;
           box-shadow: 8px 8px 17px #202020, -8px -8px 17px #dadada;
@@ -44,8 +77,60 @@ $corTexto: #fff;
         h2 {
           font-size: 1.5rem;
         }
+
         p {
+          height: 200px;
           font-size: 1rem;
+        }
+
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          width: 100%;
+          padding: 10px;
+          margin: 20px 0;
+          height: 100%;
+          max-height: 50px;
+          //background-color: #007acc;
+
+          .html {
+            color: #fa5000;
+          }
+          .css {
+            color: #0000ff;
+          }
+          .js {
+            color: #ffff00;
+          }
+          .ts {
+            color: #007acc;
+          }
+
+          .html,
+          .css,
+          .js,
+          .ts {
+            display: flex;
+            width: 30px;
+            height: 30px;
+          }
+        }
+
+        a {
+          color: black;
+          font-weight: 700;
+          text-decoration: none;
+          max-width: 200px;
+          width: 100%;
+          height: 40px;
+          position: relative;
+          text-align: center;
+          display: inline-block;
+          font-size: 24px;
+          margin: 20px 0;
+          background-color: #fff;
+          border-radius: 20px;
         }
       }
     }

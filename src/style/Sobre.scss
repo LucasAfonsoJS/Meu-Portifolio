@@ -15,6 +15,10 @@ $corTexto: #fff;
     justify-content: center;
     font-size: 2.2rem;
     padding: 20px 0;
+    &::selection {
+      color: red;
+      background-color: #fff;
+    }
   }
   .sobre_container {
     max-width: 1280px;
@@ -30,7 +34,7 @@ $corTexto: #fff;
       display: flex;
       flex-direction: column;
       padding: 1rem;
-      background-color: red;
+      //background-color: red;
       width: 50%;
       align-items: center;
       justify-content: center;
@@ -64,38 +68,7 @@ $corTexto: #fff;
         
       }
 
-      //LIMPAR ->.tyescript,
-      // .javascript,
-      // .styled-components,
-      // .css,
-      // .html
-      // .javascript {
-      //   color: #ffff00ec;
-      // }
-      // .tyescript {
-      //   color: #0000ff;
-      // }
-      // .styled-components {
-      //   color: rgb(177, 25, 182);
-      // }
-      // .css {
-      //   color: #0000ff;
-      // }
-      // .html {
-      //   color: #ffa500;
-      // }
-      // .tyescript,
-      // .javascript,
-      // .styled-components,
-      // .css,
-      // .html {
-      //   display: flex;
-      //   align-items: center;
-      //   font-size: 4rem;
-      //   border-radius: 5px;
-      //   margin: 0 10px;
-      //   width: 100%;
-      // }
+      
     }
   }
 }

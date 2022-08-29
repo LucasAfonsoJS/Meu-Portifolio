@@ -6,11 +6,20 @@
   scroll-behavior: smooth;
 }
 
+.abrir {
+  display: block !important;
+  width: 100%;
+  text-align: center;
+}
+
 header {
   background-color: #7b29e6;
   width: 100%;
   position: fixed;
   z-index: 3;
+}
+header button {
+  display: none;
 }
 header ul {
   max-width: 900px;
@@ -37,7 +46,21 @@ header ul li:hover {
 }
 
 @media screen and (max-width: 800px) {
+  header {
+    text-align: right;
+  }
+  header button {
+    cursor: pointer;
+    border: 0;
+    display: inline-block;
+    text-align: left;
+    padding: 10px;
+  }
+  header button .menu {
+    width: 30px;
+    height: 30px;
+  }
   header ul {
-    display: block;
+    display: none;
   }
 }/*# sourceMappingURL=Header.css.map */

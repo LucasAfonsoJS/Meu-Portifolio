@@ -14,55 +14,21 @@ $tamanho1: 1.5rem;
     display: flex;
     width: 100%;
     padding: 0 1rem;
-    justify-content: space-between;
-    align-items: center;
     
-    
-
-
-    .tecnologias_javascript {
-        max-width: 1200px;
+    h2 {
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 30px 0;
         width: 100%;
-        display: flex;
-        // background-color: chocolate;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        padding:40px;
-        max-width: 400px;
-        height: 100%;
-        max-height: 400px;
-        box-shadow: 0 0 20px 0px rgba(82, 73, 73, 0.35);
-        border-radius: 50%;
-        
-        
+        display: flex;
+    }
 
-        img {
-            // background-color: rgb(76, 0, 255);
-            width: 100%;
-            max-width: 280px;
-            height: 100%;
-            max-height: 280px;
-            display: flex;
-            margin-top: 30px;
-            
-            //animation: float 5s infinite;
-            //box-shadow:;
-        }
-        .Typescript {
-            padding: 2rem;
-            width: 100%;
-            max-width: 280px;
-            height: 100%;
-            max-height: 280px;
-            display: flex;
-        }
-        legend {
-            color: $branco;
-            margin: 0 auto;
-            font-size: $tamanho1;
-            font-weight: 500;
-        }
+
+    .tecnologia_wraper {
+        display: flex;
+        margin-top: 6rem;
+        width: 100%;
     }
 }
 @media screen and (max-width: 1277px)  {

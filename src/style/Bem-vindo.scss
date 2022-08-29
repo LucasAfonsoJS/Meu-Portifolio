@@ -1,90 +1,99 @@
-$preto:#232429;
+$preto: #232429;
 $alturaMinima: 100vh;
 $corTexto: #fff;
 
 .main_fundo {
-    background-color: $preto;
+  background-color: $preto;
+  width: 100%;
+  color: $corTexto;
+  display: flex;
+
+  .main_container {
+    max-width: 1280px;
     width: 100%;
-    color: $corTexto;
     display: flex;
-  
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 2%;
+    border-bottom: 2px solid #ccc;
+    margin: 0 auto;
+    min-height: $alturaMinima;
 
-    .main_container {
-        max-width: 1280px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 30px 2%;
-        border-bottom: 2px solid #ccc;
-        margin: 0 auto;
-        min-height: $alturaMinima;
+    .main_container_aprentacao {
+      width: 50%;
+      z-index: 2;
 
-        .main_container_aprentacao {
-            width: 50%;
-            z-index: 2;
+      h2 {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-top: 6rem;
 
-            h2 {
-                font-size: 4rem;
-                font-weight: bold;
-                margin-top: 6rem;
-                
-                span {
-                    color: #0000ff;
-                }
-            }
-            p {
-                font-size: 2rem;
-            }
-            
-            
+        span {
+          color: #0000ff;
         }
-        .main_container_astronauta {
-            img {
-                position: relative;
-                animation: float 8s infinite ease-in-out;
-                z-index: 1;
-            }
-            ul {
-                display: flex;
-                width: 150px;
-                margin: 40px auto;
-                justify-content: space-between;
-                // margin-top: 40px;
-                
-                a {
-                
-                    display: flex;
-                    color: #fff;
-                    border-radius: 50%;
-                    transition: 0.8s;
-                    
-                    &:hover {
-                            margin-top: -15px;
-                            transition: 0.8s;
-                            // box-shadow: 0 0 20px 0px rgba(236, 234, 234, 0.35);
-                           
-                        }
-                    
-
-                    .tamanho-dos-icones {
-                        width: 100%;
-                        display: flex;
-                        
-                    }
-                }
-            }
-            
-        }
+      }
+      p {
+        font-size: 2rem;
+      }
+      h2::selection,
+      span::selection,
+      p::selection {
+        color: #fff;
+        background-color: #0000ff;
+      }
     }
+    .main_container_astronauta {
+      img {
+        position: relative;
+        animation: float 8s infinite ease-in-out;
+        z-index: 1;
+      }
+      ul {
+        display: flex;
+        width: 150px;
+        margin: 40px auto;
+        justify-content: space-between;
+
+
+        a {
+          display: flex;
+          color: #fff;
+          border-radius: 50%;
+          transition: 0.8s;
+          font-size: 2rem;
+
+          &:hover {
+            margin-top: -15px;
+            transition: 0.8s;
+          }
+
+          .tamanho-dos-icones {
+            width: 100%;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-35px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 @media screen and (max-width: 1000px) {
-    .main_fundo .main_container .main_container_aprentacao {
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-    }
-    .main_fundo .main_container .main_container_astronauta img {
-        width: 100%;
-    }
+  .main_fundo .main_container .main_container_aprentacao {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  .main_fundo .main_container .main_container_astronauta img {
+    width: 100%;
+  }
 }

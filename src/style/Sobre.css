@@ -13,6 +13,14 @@
   font-size: 2.2rem;
   padding: 20px 0;
 }
+.sobre h2::-moz-selection {
+  color: red;
+  background-color: #fff;
+}
+.sobre h2::selection {
+  color: red;
+  background-color: #fff;
+}
 .sobre .sobre_container {
   max-width: 1280px;
   margin: 0 auto;
@@ -26,7 +34,6 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background-color: red;
   width: 50%;
   align-items: center;
   justify-content: center;

@@ -1,15 +1,13 @@
 //import { useState } from 'react'
+
+import "../style/Global.css";
 import "../style/Header.css";
-import "../style/Apresentacao.css";
-import "../style/Tecnologias.css";
-import "../style/Footer.css";
 import "../style/Bem-vindo.css";
+import "../style/Tecnologias.css";
 import "../style/Sobre.css";
 import "../style/Projetos.css";
-
+import "../style/Footer.css";
 import Header from "../components/header";
-//import Apresentacao from "../components/apresentacao";
-//import Tecnologias from "./components/tecnologias";
 import Footer from "../components/footer";
 import BemVindo from "../components/bem-vindo";
 import Sobre from "../components/sobre";
@@ -23,7 +21,7 @@ function App() {
       <Header />
       <BemVindo />
       <Sobre />
-      <Projetos/>
+      <Projetos />
       <Footer />
     </>
   );

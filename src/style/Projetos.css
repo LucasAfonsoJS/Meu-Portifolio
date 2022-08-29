@@ -1,3 +1,25 @@
+.verMais {
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 30px;
+  padding: 10px;
+  width: 200px;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 8px 8px 17px #171717, -2px -2px 17px #3b3b3b;
+  transition: 1s;
+  border: 0;
+}
+.verMais:hover {
+  transition: 1s;
+  box-shadow: 4px 4px 17px #202020, -2px -2px 17px #dadada;
+}
+
+#fechar {
+  display: none !important;
+  transition: 1s;
+}
+
 .fundo-projetos {
   background-color: #232429;
   min-height: 100vh;
@@ -7,6 +29,16 @@
 .fundo-projetos .fundo_container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+.fundo-projetos .fundo_container h1 {
+  color: #fff;
+  margin: 50px 0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .fundo-projetos .fundo_container .box-wraper {
   display: flex;
@@ -18,6 +50,9 @@
   background: linear-gradient(145deg, #252525, #2c2c2c);
   box-shadow: 8px 8px 17px #171717, -8px -8px 17px #3b3b3b;
   width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
   padding: 0 2%;
   margin: 30px;
   transition: 1s;
@@ -37,7 +72,53 @@
   font-size: 1.5rem;
 }
 .fundo-projetos .fundo_container .box-wraper .box-single p {
+  height: 200px;
   font-size: 1rem;
+}
+.fundo-projetos .fundo_container .box-wraper .box-single ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  height: 100%;
+  max-height: 50px;
+}
+.fundo-projetos .fundo_container .box-wraper .box-single ul .html {
+  color: #fa5000;
+}
+.fundo-projetos .fundo_container .box-wraper .box-single ul .css {
+  color: #0000ff;
+}
+.fundo-projetos .fundo_container .box-wraper .box-single ul .js {
+  color: #ffff00;
+}
+.fundo-projetos .fundo_container .box-wraper .box-single ul .ts {
+  color: #007acc;
+}
+.fundo-projetos .fundo_container .box-wraper .box-single ul .html,
+.fundo-projetos .fundo_container .box-wraper .box-single ul .css,
+.fundo-projetos .fundo_container .box-wraper .box-single ul .js,
+.fundo-projetos .fundo_container .box-wraper .box-single ul .ts {
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+.fundo-projetos .fundo_container .box-wraper .box-single a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  max-width: 200px;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 768px) {

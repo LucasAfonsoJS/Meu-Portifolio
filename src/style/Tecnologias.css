@@ -10,44 +10,19 @@
   display: flex;
   width: 100%;
   padding: 0 1rem;
-  justify-content: space-between;
-  align-items: center;
 }
-.tecnologias .tecnologias_javascript {
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  max-width: 400px;
-  height: 100%;
-  max-height: 400px;
-  box-shadow: 0 0 20px 0px rgba(82, 73, 73, 0.35);
-  border-radius: 50%;
-}
-.tecnologias .tecnologias_javascript img {
-  width: 100%;
-  max-width: 280px;
-  height: 100%;
-  max-height: 280px;
-  display: flex;
-  margin-top: 30px;
-}
-.tecnologias .tecnologias_javascript .Typescript {
-  padding: 2rem;
-  width: 100%;
-  max-width: 280px;
-  height: 100%;
-  max-height: 280px;
-  display: flex;
-}
-.tecnologias .tecnologias_javascript legend {
+.tecnologias h2 {
   color: #fff;
-  margin: 0 auto;
   font-size: 1.5rem;
-  font-weight: 500;
+  margin: 30px 0;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.tecnologias .tecnologia_wraper {
+  display: flex;
+  margin-top: 6rem;
+  width: 100%;
 }
 
 @media screen and (max-width: 1277px) {
