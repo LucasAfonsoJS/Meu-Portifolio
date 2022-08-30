@@ -1,6 +1,4 @@
-import { BsLinkedin } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
 
 function Footer() {
@@ -15,7 +13,7 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="https://api.whatsapp.com/send?phone=5548969966188&text=Vim%20pelo%20portifolio">
+            <a href="https://api.whatsapp.com/send?phone=5548996996188&text=Vim%20pelo%20portif%C3%B3lio">
               <BsWhatsapp className="tamanho-dos-icones" /> Whatzapp
             </a>
           </li>

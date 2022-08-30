@@ -6,28 +6,30 @@ import {
   SiReact,
   SiTypescript,
 } from "react-icons/si";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
 function Projetos() {
   const [total, setTotal] = useState(0);
   //PEGAR O NUMERO E COMPARAR PARA VER SE É PRA FECHAR OU ABRIR
   //IMPAR:FECHAR, PAR:ABRIR
-  let openAndClose = total % 2 === 0 ? "fechar" : "";
+  let openAndClose = total % 2 === 0 ? "fechar" : "anima2";
 
-  // const left = ScrollReveal({ reset: true });
-  // left.reveal(".show-up-from-left", {
-  //   origin: "left",
-  //   duration: 1000,
-  // });
- 
+  useEffect(() => {
+    ScrollReveal({ reset: true }).reveal("#anima2", {
+      duration: 2000,
+      origin: "left",
+      distance: "60px",
+    });
+  }, []);
+
   return (
     <>
       <article className="fundo-projetos">
         <Container id="Projetos" className="fundo_container">
-          <h1>Projetos</h1>
+          <h1 className="anima">Projetos</h1>
           <section className="box-wraper">
-            <section className="box-single">
+            <section className="box-single anima">
               <h2>lista de presença</h2>
               <p>
                 Aprendi muito com esse projeto, durante o desevolvimento aprendi
@@ -48,7 +50,7 @@ function Projetos() {
                 </a>
               </LineBox>
             </section>
-            <section className="box-single show-up-from-left">
+            <section className="box-single anima">
               <h2>Calculadora</h2>
               <p>
                 Aprendi muito com esse projeto, durante o desevolvimento aprendi
@@ -68,7 +70,7 @@ function Projetos() {
               </LineBox>
             </section>
 
-            <section className="box-single show-up-from-left">
+            <section className="box-single anima">
               <h2>Formulario</h2>
               <p>
                 Nesse formulario possui validações para o usuário não validar
@@ -148,7 +150,7 @@ function Projetos() {
               <h2>Loja de Carro</h2>
               <p>
                 Um site reposivo que se adapta a qualquer dispositivo, possui
-                barra de filtro de preço com paginas de venda sobre 
+                barra de filtro de preço com paginas de venda sobre
               </p>
               <ul>
                 <SiHtml5 className="html" />

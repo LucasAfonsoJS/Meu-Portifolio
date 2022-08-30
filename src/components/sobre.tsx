@@ -9,12 +9,6 @@ function Sobre() {
   const apiGit: string = "https://api.github.com/users/LucasAfonsoJS";
 
   const [user, setUser] = useState({} as Apis);
-  // const left = ScrollReveal({ reset: false });
-  // left.reveal(".show-up-from-left", {
-  //   origin: "left",
-  //   duration: 1000,
-  // });
-  
 
   useEffect(() => {
     fetch(apiGit)
@@ -36,18 +30,18 @@ function Sobre() {
         <h2>Sobre</h2>
         <section className="sobre_container">
           <section className="sobre_mim">
-            <h3>Quem sou eu?</h3>
-            <p>
+            <h3 className="anima">Quem sou eu?</h3>
+            <p className="anima">
               Sou um Dev Front-end moro em tubarão SC, vou fazer 20 anos comecei
               em no começo de 2021. me cosidero uma pessoa muito persistente.
             </p>
-            <p>
+            <p className="anima">
               As tecnologias que eu utilizo são Javascript, Typescript, React e
               styled components.
             </p>
           </section>
 
-          <section className="sobre_imgs">
+          <section className="sobre_imgs anima">
             <img src={user.avatar} alt="" />
           </section>
         </section>
