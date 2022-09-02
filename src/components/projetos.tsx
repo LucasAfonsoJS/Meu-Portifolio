@@ -30,7 +30,7 @@ function Projetos() {
           <h1 className="anima">Projetos</h1>
           <section className="box-wraper">
             <section className="box-single anima">
-              <h2>lista de presença</h2>
+              <h2>Lista de presença</h2>
               <p>
                 Aprendi muito com esse projeto, durante o desevolvimento aprendi
                 a manipular o dom, junto com isso conheci novos métodos e novas
@@ -91,11 +91,10 @@ function Projetos() {
             </section>
 
             <section id={openAndClose} className="box-single">
-              <h2>API Pokémon</h2>
+              <h2>Pagina Serviços</h2>
               <p>
-                Nesse projeto foi consumido uma api que nela contém pokémons.
-                Para pegar os pokemons basta escrever o numero de pokémons que
-                você deseja.
+                Uma pagina simples e responsiva para todo tipo de tela com
+                formulario preços com menu mobile.
               </p>
               <ul>
                 <SiHtml5 className="html" />
@@ -103,17 +102,18 @@ function Projetos() {
                 <SiJavascript className="js" />
               </ul>
               <LineBox>
-                <a href="" target="_blank">
+                <a href="https://pagina-sevicos.netlify.app/" target="_blank">
                   Veja
                 </a>
               </LineBox>
             </section>
 
             <section id={openAndClose} className="box-single">
-              <h2>Jogo do Mario</h2>
+              <h2>Gerador QRcode</h2>
               <p>
-                Um jogo do mario se baseia em pular os obstaculos e para pular
-                basta clickar qualquer tecla.
+                Gera um arquivo qrcode no formato png é só inserir o link e
+                clicar em "Baixa o QRCode" e fará o dowload. As bibliotecas
+                usadas foram react-qrcode.
               </p>
               <ul>
                 <SiHtml5 className="html" />
@@ -121,7 +121,10 @@ function Projetos() {
                 <SiJavascript className="js" />
               </ul>
               <LineBox>
-                <a href="" target="_blank">
+                <a
+                  href="https://gerador-qrcode1.netlify.app/"
+                  target="_blank"
+                >
                   Veja
                 </a>
               </LineBox>

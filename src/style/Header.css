@@ -49,6 +49,14 @@ header ul li:hover {
   header {
     text-align: right;
   }
+  header li {
+    padding: 0 !important;
+  }
+  header li a {
+    width: 100%;
+    background-color: aqua;
+    display: inline-block;
+  }
   header button {
     cursor: pointer;
     border: 0;

@@ -49,6 +49,16 @@ header ul li:hover {
 @media screen and (max-width: 800px) {
   header {
     text-align: right;
+
+    li {
+      padding: 0 !important;
+
+      a {
+        width: 100%;
+        background-color: aqua;
+        display: inline-block;
+      }
+    }
   }
   header button {
     cursor: pointer;
